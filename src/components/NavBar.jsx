@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import Logo from '../images/logo.png'
 import {links} from '../data.js'
@@ -6,6 +7,9 @@ import './navbar.css'
 
 
 const NavBar = () => {
+
+    const [isNavShowing, setIsNavShowing] = useState(false);
+
   return (
     <nav>
         <div className='container nav_container'>
@@ -15,7 +19,7 @@ const NavBar = () => {
             </Link> 
 
             {/* nav links */}
-            <ul className='nav_links'>
+            <ul className= {`nav_links ${isNavShowing ? 'show_nav' : 'hide_nav'}`} >
                 {
                     links.map(({name, path}, index) => {
                         return(
@@ -28,7 +32,7 @@ const NavBar = () => {
             </ul>
 
             {/* toggle button menu icon */}
-            <button className='nav_toggle-btn'>
+            <button className='nav_toggle-btn'  onClick={() => setIsNavShowing(!isNavShowing)}>
                 <FaBars/>
             </button>
         </div> 

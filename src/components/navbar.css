@@ -95,4 +95,12 @@ nav{
         align-items: center;
         padding: 1rem 5rem;
     }
+
+    .show_nav{
+        display: flex;
+    }
+
+    .hide_nav{
+        display: none;
+    }
 } 
