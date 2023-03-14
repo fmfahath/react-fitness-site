@@ -1,0 +1,24 @@
+nav{
+    height: 5rem;
+    width: 100vw;
+    background-color: var(--color-primary);
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 99;
+}
+
+.nav_container{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* only show on  tablet & mobile devices */
+.nav_toggle-btn{
+    display: none;
+}
+

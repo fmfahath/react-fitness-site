@@ -27,7 +27,7 @@ const NavBar = () => {
                 }
             </ul>
 
-            {/* mnu icon */}
+            {/* toggle button menu icon */}
             <button className='nav_toggle-btn'>
                 <FaBars/>
             </button>
