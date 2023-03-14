@@ -1,13 +1,13 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NavBar from './components/NavBar';
-import Home from './pages/home/Home';
+import NotFound from './pages/notFound/NotFound';
 
 const App = () => {
   return (
     <BrowserRouter>
       <NavBar/>
-      <Home/>
+      <NotFound/>
     </BrowserRouter>
     
   )
