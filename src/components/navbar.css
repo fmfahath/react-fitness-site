@@ -32,3 +32,27 @@ nav{
     gap: 3.5rem;
     align-items: center;
 }
+
+.nav_links a{
+    transition: var(--transition);
+}
+
+.nav_links a:hover{
+    color: var(--color-secondary);
+}
+
+.active-nav{
+    position: relative;
+}
+
+.active-nav::after{
+    content: '';
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    background-color: var(--color-primary);
+    position: absolute;
+    left: calc(50% - 0.6rem);
+    transform: rotate(45deg);
+    margin-top: 0.9rem;
+}
