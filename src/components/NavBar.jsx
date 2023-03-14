@@ -1,6 +1,7 @@
 import { Link, NavLink } from 'react-router-dom'
 import Logo from '../images/logo.png'
 import {links} from '../data.js'
+import {FaBars} from 'react-icons/fa'
 import './navbar.css'
 
 
@@ -25,6 +26,11 @@ const NavBar = () => {
                     })
                 }
             </ul>
+
+            {/* mnu icon */}
+            <button className='nav_toggle-btn'>
+                <FaBars/>
+            </button>
         </div> 
     </nav>
   )
